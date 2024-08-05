@@ -6,8 +6,8 @@ defineProps<{
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>You found us and our project!</h3>
+    <h1 class="green source-code-pro-400">{{ msg }}</h1>
+    <h3 class="source-code-pro-400">You found us and our project!</h3>
     <!-- <p>Copyright © G2R Team 2021-{{ new Date().getFullYear() }}</p> -->
   </div>
 </template>
