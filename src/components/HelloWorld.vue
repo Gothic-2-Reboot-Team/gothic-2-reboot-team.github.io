@@ -7,11 +7,8 @@ defineProps<{
 <template>
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
-    <h3>
-      You’ve successfully created a project with
-      <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
-      <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. What's next?
-    </h3>
+    <h3>You found us and our project!</h3>
+    <!-- <p>Copyright © G2R Team 2021-{{ new Date().getFullYear() }}</p> -->
   </div>
 </template>
 
