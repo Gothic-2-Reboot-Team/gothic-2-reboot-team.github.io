@@ -1,12 +1,12 @@
 <template>
-  <div class="about">
-    <h3 class="source-code-pro-400" v-html="$t('about.desc')"></h3>
+  <div class="faq">
+    <h3 class="source-code-pro-400">{{ $t('faq.soon') }}</h3>
   </div>
 </template>
 
 <style>
 @media (min-width: 1024px) {
-  .about {
+  .faq {
     min-height: 100vh;
     display: flex;
     align-items: center;
