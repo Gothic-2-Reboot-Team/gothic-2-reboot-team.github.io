@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from '@/components/HelloWorld.vue'
+import NewFooter from '@/components/NewFooter.vue'
 </script>
 
 <template>
@@ -8,11 +9,14 @@ import HelloWorld from './components/HelloWorld.vue'
     <img alt="G2R logo" class="logo" src="@/assets/logo.png" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld />
       <nav>
-        <RouterLink to="/" class="source-code-pro-400">Home</RouterLink>
-        <RouterLink to="/about" class="source-code-pro-400">About</RouterLink>
+        <RouterLink to="/" class="source-code-pro-400">{{ $t('nav.home') }}</RouterLink>
+        <RouterLink to="/about" class="source-code-pro-400">{{ $t('nav.about') }}</RouterLink>
+        <RouterLink to="/faq" class="source-code-pro-400">FAQ</RouterLink>
       </nav>
+      <br />
+      <NewFooter />
     </div>
   </header>
 

@@ -1,5 +1,9 @@
 @import './base.css';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -18,6 +22,10 @@ a,
 
 @media (hover: hover) {
   a:hover {
+    /* background-color: hsla(160, 100%, 37%, 0.2); */
+    background-color: hsla(0, 0%, 33%, 0.2);
+  }
+  .green:hover {
     /* background-color: hsla(160, 100%, 37%, 0.2); */
     background-color: hsla(0, 0%, 33%, 0.2);
   }
