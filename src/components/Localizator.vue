@@ -1,3 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
   <div class="locale-changer">
     <select class="green source-code-pro-400" v-model="$i18n.locale">
