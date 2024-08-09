@@ -32,7 +32,7 @@ option {
 export default {
   name: 'locale-changer',
   data() {
-    return { langs: ['en', 'pl', 'de'] }
+    return { langs: ['en', 'pl', 'de', 'ja'] }
   }
 }
 </script>
