@@ -2,7 +2,7 @@ import '@/assets/main.css'
 
 import EN_LOCALE from '@/locales/en.json'
 import PL_LOCALE from '@/locales/pl.json'
-import PL_LOCALE from '@/locales/de.json'
+import DE_LOCALE from '@/locales/de.json'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
