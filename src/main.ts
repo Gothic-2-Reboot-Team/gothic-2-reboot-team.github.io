@@ -3,6 +3,7 @@ import '@/assets/main.css'
 import EN_LOCALE from '@/locales/en.json'
 import PL_LOCALE from '@/locales/pl.json'
 import DE_LOCALE from '@/locales/de.json'
+import JA_LOCALE from '@/locales/ja.json'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
@@ -18,6 +19,7 @@ const i18n = createI18n({
     en: EN_LOCALE,
     pl: PL_LOCALE,
     de: DE_LOCALE,
+    ja: JA_LOCALE,
   }
 })
 
