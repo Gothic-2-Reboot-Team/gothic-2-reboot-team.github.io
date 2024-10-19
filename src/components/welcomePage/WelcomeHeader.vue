@@ -3,7 +3,7 @@
 <template>
   <div class="greetings">
     <h1 class="green source-code-pro-400">{{ $t('welcome.header') }}</h1>
-    <h3 class="source-code-pro-400">{{ $t('welcome.desc') }}</h3>
+    <h3 class="source-code-pro-400">{{ $t('welcome.description') }}</h3>
   </div>
 </template>
 

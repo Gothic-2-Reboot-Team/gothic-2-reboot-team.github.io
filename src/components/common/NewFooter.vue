@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Localizator from '@/components/Localizator.vue'
+import LocaleSelector from '@/components/common/LocaleSelector.vue'
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import Localizator from '@/components/Localizator.vue'
       <h4 class="source-code-pro-400">Copyright © G2R Team 2021-{{ new Date().getFullYear() }}</h4>
     </div>
     <div class="grid-item">
-      <Localizator />
+      <LocaleSelector />
     </div>
   </div>
 </template>
