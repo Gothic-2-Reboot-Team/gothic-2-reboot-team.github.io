@@ -1,7 +1,5 @@
-<script setup lang="ts"></script>
-
 <template>
-  <div class="locale-changer">
+  <div class="locale-selector">
     <select class="green source-code-pro-400" v-model="$i18n.locale">
       <option
         class="green source-code-pro-400"
@@ -15,7 +13,18 @@
   </div>
 </template>
 
-<style scoped>
+<script setup lang="ts"></script>
+
+<script lang="ts">
+export default {
+  name: 'LocaleSelector',
+  data() {
+    return { langs: this.$i18n.availableLocales }
+  }
+}
+</script>
+
+<style lang="css" scoped>
 select,
 option {
   border: 0;
@@ -27,12 +36,3 @@ option {
   text-transform: uppercase;
 }
 </style>
-
-<script>
-export default {
-  name: 'locale-changer',
-  data() {
-    return { langs: ['en', 'pl', 'de', 'ja'] }
-  }
-}
-</script>
