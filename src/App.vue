@@ -11,8 +11,10 @@ import NewFooter from '@/components/NewFooter.vue'
     <div class="wrapper">
       <HelloWorld />
       <nav>
-        <RouterLink to="/" class="source-code-pro-400">{{ $t('nav.home') }}</RouterLink>
-        <RouterLink to="/about" class="source-code-pro-400">{{ $t('nav.about') }}</RouterLink>
+        <RouterLink to="/" class="source-code-pro-400">{{ $t('navigation.home') }}</RouterLink>
+        <RouterLink to="/about" class="source-code-pro-400">{{
+          $t('navigation.about')
+        }}</RouterLink>
         <RouterLink to="/faq" class="source-code-pro-400">FAQ</RouterLink>
       </nav>
       <br />

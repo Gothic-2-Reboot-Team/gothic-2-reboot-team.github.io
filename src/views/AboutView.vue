@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h3 class="source-code-pro-400" v-html="$t('about.desc')"></h3>
+    <h3 class="source-code-pro-400" v-html="$t('about.description')"></h3>
   </div>
 </template>
 

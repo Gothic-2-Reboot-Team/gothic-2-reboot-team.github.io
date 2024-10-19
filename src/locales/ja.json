@@ -1,14 +1,14 @@
 {
   "welcome": {
     "header": "やったね！",
-    "desc": "私たちと私たちのプロジェクトを見つけてくれたんだね！"
+    "description": "私たちと私たちのプロジェクトを見つけてくれたんだね！"
   },
-  "nav": {
+  "navigation": {
     "home": "Home",
     "about": "About us"
   },
   "about": {
-    "desc": "現在、私たちは<i>『GOTHIC 2: Reboot』<i>に取り組んでいます。これは、<i>『Gothic II』<i>とその拡張パック<i>『Night of the Raven』<i>向けの改造プロジェクトです。このプロジェクトは、シリーズ第2作を改善し、未発売の<i>『Gothic Sequel』<i>や<i>『Gothic』<i>のビジョンと統一することを目的とした一種のリブートとして作られました。"
+    "description": "現在、私たちは<i>『GOTHIC 2: Reboot』<i>に取り組んでいます。これは、<i>『Gothic II』</i>とその拡張パック<i>『Night of the Raven』</i>向けの改造プロジェクトです。このプロジェクトは、シリーズ第2作を改善し、未発売の<i>『Gothic Sequel』</i>や<i>『Gothic』<i>のビジョンと統一することを目的とした一種のリブートとして作られました。"
   },
   "faq": {
     "soon": "Soon!"

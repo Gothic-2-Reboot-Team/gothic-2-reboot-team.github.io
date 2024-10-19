@@ -1,19 +1,12 @@
 import { createI18n } from 'vue-i18n'
-
-import EN_LOCALE from '@/locales/en.json'
-import PL_LOCALE from '@/locales/pl.json'
-import DE_LOCALE from '@/locales/de.json'
-import JA_LOCALE from '@/locales/ja.json'
+import messages from '@intlify/unplugin-vue-i18n/messages'
 
 const i18n = createI18n({
+  legacy: false,
+  globalInjection: true,
   locale: 'en',
   fallbackLocale: 'en',
-  messages: {
-    en: EN_LOCALE,
-    pl: PL_LOCALE,
-    de: DE_LOCALE,
-    ja: JA_LOCALE
-  }
+  messages
 })
 
 export default i18n
