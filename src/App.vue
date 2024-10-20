@@ -1,23 +1,21 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/welcomePage/WelcomeHeader.vue'
-import NewFooter from '@/components/common/NewFooter.vue'
+import WelcomeHeader from '@/components/welcomePage/WelcomeHeader.vue'
+import InfoFooter from '@/components/common/InfoFooter.vue'
 </script>
 
 <template>
   <header>
     <img alt="G2R logo" class="logo" src="@/assets/logo.webp" width="125" height="125" />
     <div class="wrapper">
-      <HelloWorld />
+      <WelcomeHeader />
       <nav>
         <RouterLink to="/" class="source-code-pro-400">{{ $t('navigation.home') }}</RouterLink>
-        <RouterLink to="/about" class="source-code-pro-400">{{
-          $t('navigation.about')
-        }}</RouterLink>
+        <RouterLink to="/about" class="source-code-pro-400">{{ $t('navigation.about') }}</RouterLink>
         <RouterLink to="/faq" class="source-code-pro-400">FAQ</RouterLink>
       </nav>
       <br />
-      <NewFooter />
+      <InfoFooter />
     </div>
   </header>
 

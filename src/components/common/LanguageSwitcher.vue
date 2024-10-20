@@ -1,13 +1,13 @@
 <template>
-  <div class="locale-selector">
-    <select class="green source-code-pro-400" v-model="$i18n.locale">
+  <div>
+    <select class="green source-code-pro-400" v-model="$i18n.locale" @change="saveLocale">
       <option
         class="green source-code-pro-400"
         v-for="(lang, i) in langs"
         :key="`Lang${i}`"
         :value="lang"
       >
-        {{ lang }}
+        {{ lang.toUpperCase() }}
       </option>
     </select>
   </div>
@@ -17,9 +17,20 @@
 
 <script lang="ts">
 export default {
-  name: 'LocaleSelector',
+  name: 'LanguageSwitcher',
   data() {
     return { langs: this.$i18n.availableLocales }
+  },
+  created() {
+    const savedLocale = localStorage.getItem('locale')
+    if (savedLocale) {
+      this.$i18n.locale = savedLocale
+    }
+  },
+  methods: {
+    saveLocale() {
+      localStorage.setItem('locale', this.$i18n.locale)
+    }
   }
 }
 </script>
@@ -33,6 +44,5 @@ option {
   border-radius: 0;
   margin-left: 16px;
   margin-bottom: 10px;
-  text-transform: uppercase;
 }
 </style>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import LocaleSelector from '@/components/common/LocaleSelector.vue'
+import LanguageSwitcher from '@/components/common/LanguageSwitcher.vue'
 </script>
 
 <template>
@@ -9,7 +9,7 @@ import LocaleSelector from '@/components/common/LocaleSelector.vue'
       <h4 class="source-code-pro-400">Copyright © G2R Team 2021-{{ new Date().getFullYear() }}</h4>
     </div>
     <div class="grid-item">
-      <LocaleSelector />
+      <LanguageSwitcher />
     </div>
   </div>
 </template>
