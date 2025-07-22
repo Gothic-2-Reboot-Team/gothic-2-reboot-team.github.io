@@ -1,28 +1,34 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import WelcomeHeader from '@/components/welcomePage/WelcomeHeader.vue'
-import InfoFooter from '@/components/common/InfoFooter.vue'
-</script>
-
 <template>
   <header>
-    <img alt="G2R logo" class="logo" src="@/assets/logo.webp" width="125" height="125" />
+    <img alt="G2R logo" class="logo" src="@/assets/images/logo.webp" width="125" height="125" />
     <div class="wrapper">
       <WelcomeHeader />
       <nav>
-        <RouterLink to="/" class="source-code-pro-400">{{ $t('navigation.home') }}</RouterLink>
-        <RouterLink to="/about" class="source-code-pro-400">{{ $t('navigation.about') }}</RouterLink>
-        <RouterLink to="/faq" class="source-code-pro-400">FAQ</RouterLink>
+        <RouterLink to="/" class="source-code-pro-400">
+          {{ $t('navigation.home') }}
+        </RouterLink>
+        <RouterLink to="/about" class="source-code-pro-400">
+          {{ $t('navigation.about') }}
+        </RouterLink>
+        <RouterLink to="/faq" class="source-code-pro-400">
+          FAQ
+        </RouterLink>
       </nav>
       <br />
-      <InfoFooter />
     </div>
   </header>
 
   <RouterView />
+  <BottomFooter />
 </template>
 
-<style scoped>
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router'
+import WelcomeHeader from '@/components/common/WelcomeHeader.vue'
+import BottomFooter from '@/components/common/BottomFooter.vue'
+</script>
+
+<style lang="css" scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;

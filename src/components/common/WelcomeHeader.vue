@@ -1,11 +1,15 @@
-<script setup lang="ts"></script>
-
 <template>
   <div class="greetings">
-    <h1 class="green source-code-pro-400">{{ $t('welcome.header') }}</h1>
-    <h3 class="source-code-pro-400">{{ $t('welcome.description') }}</h3>
+    <h1 class="green source-code-pro-400">
+      {{ $t('welcome.header') }}
+    </h1>
+    <h3 class="source-code-pro-400">
+      {{ $t('welcome.description') }}
+    </h3>
   </div>
 </template>
+
+<script setup lang="ts"/>
 
 <style scoped>
 h1 {
