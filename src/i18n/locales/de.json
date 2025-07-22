@@ -1,0 +1,16 @@
+{
+  "welcome": {
+    "header": "Du hast es geschafft!",
+    "description": "Du hast uns und unser Projekt gefunden!"
+  },
+  "navigation": {
+    "home": "Hauptseite",
+    "about": "Über uns"
+  },
+  "about": {
+    "description": "Wir arbeiten momentan an <i>GOTHIC 2: Reboot</i>. Es handelt sich um eine Modifikation für das Spiel <i>Gothic II</i> mit dem <i>Nacht des Raben</i> Add-On. Das Projekt wurde als eine Art von Reboot geschaffen, um den zweiten Teil der Reihe zu verbessern und es mit der Vision innerhalb von <i>Gothic</i> und dem <i>Gothic Sequel</i> zu vereinen."
+  },
+  "faq": {
+    "soon": "Soon!"
+  }
+}
