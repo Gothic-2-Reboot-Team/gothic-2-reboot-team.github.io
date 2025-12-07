@@ -3776,6 +3776,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@volar/typescript@npm:2.4.26":
+  version: 2.4.26
+  resolution: "@volar/typescript@npm:2.4.26"
+  dependencies:
+    "@volar/language-core": "npm:2.4.26"
+    path-browserify: "npm:^1.0.1"
+    vscode-uri: "npm:^3.0.8"
+  checksum: 10/b72c5f7a46c165f3b2312961bf6fc3fb2c8751bb4e14bb3971d68fa753181fdf66f792cbea17a0c78fb5d2c7d89dec0a05218ff637626d8ea3bc8401b24b78bd
+  languageName: node
+  linkType: hard
+
 "@vue-macros/common@npm:^3.1.1":
   version: 3.1.1
   resolution: "@vue-macros/common@npm:3.1.1"
@@ -3935,7 +3946,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vue/language-core@npm:^3.1.3":
+"@vue/language-core@npm:3.1.6, @vue/language-core@npm:^3.1.3":
   version: 3.1.6
   resolution: "@vue/language-core@npm:3.1.6"
   dependencies:
@@ -4015,6 +4026,19 @@ __metadata:
   peerDependencies:
     vue: ^3.5.0
   checksum: 10/b7e9c91d0c0f32592f432030d9c31d8780765a109dd2ad48bbb29a6ddbbcdc620a89a34ff1dfed7f2cd4c144237df2414e735af691165a385fa942e2156f5dbd
+  languageName: node
+  linkType: hard
+
+"@vueuse/core@npm:14.1.0":
+  version: 14.1.0
+  resolution: "@vueuse/core@npm:14.1.0"
+  dependencies:
+    "@types/web-bluetooth": "npm:^0.0.21"
+    "@vueuse/metadata": "npm:14.1.0"
+    "@vueuse/shared": "npm:14.1.0"
+  peerDependencies:
+    vue: ^3.5.0
+  checksum: 10/4fa884f85a013fb2403ec20da5a45e1ac0b84c4d84ebd1e0612e1277250b4ad3d1fbdca03d108377eab5281e636c9c1e1ad1e22905220a803162b01e21fcbad2
   languageName: node
   linkType: hard
 
@@ -4112,6 +4136,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vueuse/metadata@npm:14.1.0":
+  version: 14.1.0
+  resolution: "@vueuse/metadata@npm:14.1.0"
+  checksum: 10/ee2af408aab6718d949e7e85f19c786d2582157edfa2b1c5aad81e88253572920e7f992f7be78d96ea8cc829172f5eb5cd891338454bd74be507061508b1f7b9
+  languageName: node
+  linkType: hard
+
+"@vueuse/nuxt@npm:^14.1.0":
+  version: 14.1.0
+  resolution: "@vueuse/nuxt@npm:14.1.0"
+  dependencies:
+    "@nuxt/kit": "npm:^4.1.3"
+    "@vueuse/core": "npm:14.1.0"
+    "@vueuse/metadata": "npm:14.1.0"
+    local-pkg: "npm:^1.1.2"
+  peerDependencies:
+    nuxt: ^3.0.0 || ^4.0.0-0
+    vue: ^3.5.0
+  checksum: 10/fe671032f1a83fe7f7e3d2e95fe9d900207fcc45e46667ab935e4dc3dce3fe6c6a729c5953c55404fbb5198e8aa4f21306200941e5d6ee57ffb3e59471402879
+  languageName: node
+  linkType: hard
+
 "@vueuse/shared@npm:10.11.1":
   version: 10.11.1
   resolution: "@vueuse/shared@npm:10.11.1"
@@ -4136,6 +4182,15 @@ __metadata:
   peerDependencies:
     vue: ^3.5.0
   checksum: 10/cd7670805a2760b5ccd93855634288dbfdc41014cbeb97f1d47f057301bfa2d056f8eb86eb8b7bbd26c64633d72e4bc8713dec8467a3c21aa31c7eb7a8723440
+  languageName: node
+  linkType: hard
+
+"@vueuse/shared@npm:14.1.0":
+  version: 14.1.0
+  resolution: "@vueuse/shared@npm:14.1.0"
+  peerDependencies:
+    vue: ^3.5.0
+  checksum: 10/c9f211c38422620acb257590dd1de691cb6e2ecce3f0530bc64afea82986b6328aeac057822005fb2b798fc41b8cf981d30d9557c9fecb581e36840a98359dbe
   languageName: node
   linkType: hard
 
@@ -6574,6 +6629,7 @@ __metadata:
     "@nuxt/ui": "npm:^4.2.1"
     "@nuxtjs/i18n": "npm:10.2.1"
     "@types/node": "npm:^24.10.1"
+    "@vueuse/nuxt": "npm:^14.1.0"
     eslint: "npm:^9.39.1"
     nuxt: "npm:^4.2.1"
     prettier: "npm:^3.7.4"
@@ -6581,6 +6637,7 @@ __metadata:
     typescript: "npm:^5.9.3"
     vue: "npm:^3.5.25"
     vue-router: "npm:^4.6.3"
+    vue-tsc: "npm:^3.1.6"
   languageName: unknown
   linkType: soft
 
@@ -11311,7 +11368,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vscode-uri@npm:^3.1.0":
+"vscode-uri@npm:^3.0.8, vscode-uri@npm:^3.1.0":
   version: 3.1.0
   resolution: "vscode-uri@npm:3.1.0"
   checksum: 10/80c2a2421f44b64008ef1f91dfa52a2d68105cbb4dcea197dbf5b00c65ccaccf218b615e93ec587f26fc3ba04796898f3631a9406e3b04cda970c3ca8eadf646
@@ -11407,6 +11464,20 @@ __metadata:
   peerDependencies:
     vue: ^3.5.0
   checksum: 10/b4e69b5047dc86640cdcceabd9859cc1ba000ef7b364b0725f1a3b307410daadba840b0637a511ca32b68e58cb6d4a275a165407ba76cf7ad012ed57cf254e66
+  languageName: node
+  linkType: hard
+
+"vue-tsc@npm:^3.1.6":
+  version: 3.1.6
+  resolution: "vue-tsc@npm:3.1.6"
+  dependencies:
+    "@volar/typescript": "npm:2.4.26"
+    "@vue/language-core": "npm:3.1.6"
+  peerDependencies:
+    typescript: ">=5.0.0"
+  bin:
+    vue-tsc: ./bin/vue-tsc.js
+  checksum: 10/bb9856db2d80b0394c29277a67f41946d27064802c7261d3049a63ea6b098bcb43a83cdbfaca273862ffe9dc7ca04c18f567ce00714c093e818bae217eebf465
   languageName: node
   linkType: hard
 

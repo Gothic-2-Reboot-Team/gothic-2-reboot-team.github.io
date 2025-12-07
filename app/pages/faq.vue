@@ -6,6 +6,6 @@
 
 <script setup lang="ts">
 useHead({
-  title: 'FAQ'
+  title: 'FAQ',
 })
 </script>

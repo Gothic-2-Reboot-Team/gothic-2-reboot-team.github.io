@@ -3,12 +3,21 @@
     <UMain class="flex-1 flex flex-col overflow-hidden">
       <UContainer class="flex-1 flex flex-col overflow-hidden">
         <div class="flex-1 flex flex-col lg:flex-row overflow-hidden lg:gap-16">
-          <div class="w-full lg:w-1/2 flex items-center justify-center lg:justify-end 
-                      p-6 lg:p-0 overflow-y-auto">
-
-            <div class="flex flex-col lg:flex-row p-0 lg:p-6 w-full gap-4 lg:gap-8">
-              <div class="flex justify-center items-center lg:justify-between mb-0 shrink-0">
-                <img alt="G2R logo" src="assets/images/logo.webp" width="125" height="125" />
+          <div
+            class="w-full lg:w-1/2 flex items-center justify-center lg:justify-end p-6 lg:p-0 overflow-y-auto"
+          >
+            <div
+              class="flex flex-col lg:flex-row p-0 lg:p-6 w-full gap-4 lg:gap-8"
+            >
+              <div
+                class="flex justify-center items-center lg:justify-between mb-0 shrink-0"
+              >
+                <img
+                  alt="G2R logo"
+                  src="assets/images/logo.webp"
+                  width="125"
+                  height="125"
+                />
               </div>
 
               <div class="flex flex-col text-center lg:text-left">
@@ -27,18 +36,18 @@
                   </UNavigationMenu>
                 </div>
               </div>
-
             </div>
           </div>
 
-          <div class="w-full lg:w-1/2 flex items-center justify-center lg:justify-start 
-                      p-6 lg:p-0 overflow-y-auto">
+          <div
+            class="w-full lg:w-1/2 flex items-center justify-center lg:justify-start p-6 lg:p-0 overflow-y-auto"
+          >
             <NuxtPage />
           </div>
         </div>
       </UContainer>
     </UMain>
-    
+
     <AppFooter />
   </UApp>
 </template>
@@ -54,17 +63,17 @@ const items = computed<NavigationMenuItem[]>(() => [
   {
     label: 'navigation.home',
     to: localePath('/'),
-    active: route.path === localePath('/')
+    active: route.path === localePath('/'),
   },
   {
     label: 'navigation.about',
     to: localePath('/about'),
-    active: route.path === localePath('/about')
+    active: route.path === localePath('/about'),
   },
   {
     label: 'FAQ',
     to: localePath('/faq'),
-    active: route.path === localePath('/faq')
+    active: route.path === localePath('/faq'),
   },
 ])
 
