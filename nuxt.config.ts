@@ -4,7 +4,7 @@ import { loadLocales } from './i18n/utils/loadLocales'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   css: ['~/assets/css/main.css'],
-  modules: ['@nuxtjs/i18n', '@nuxt/ui', '@nuxt/eslint'],
+  modules: ['@nuxtjs/i18n', '@nuxt/ui'],
   devtools: { enabled: true },
   i18n: {
     locales: loadLocales(),
