@@ -1,7 +1,7 @@
 # GOTHIC 2 Reboot
 
-![Node.js](https://img.shields.io/badge/22-blue?style=for-the-badge&logo=node.js&label=Node.js)
-![Yarn](https://img.shields.io/badge/4-blue?style=for-the-badge&logo=yarn&label=Yarn)
+![Node.js](https://img.shields.io/badge/24-blue?style=for-the-badge&logo=node.js&label=Node.js)
+![pnpm](https://img.shields.io/badge/10-blue?style=for-the-badge&logo=pnpm&label=pnpm)
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -14,7 +14,7 @@ Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduct
 Make sure to install dependencies:
 
 ```bash
-yarn install
+pnpm install
 ```
 
 ## Development Server
@@ -22,7 +22,7 @@ yarn install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 ## Production
@@ -30,13 +30,13 @@ yarn dev
 Build the application for production:
 
 ```bash
-yarn build
+pnpm build
 ```
 
 Locally preview production build:
 
 ```bash
-yarn preview
+pnpm preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
