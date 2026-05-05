@@ -8,26 +8,29 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "format": "pnpx @biomejs/biome format --write",
-    "lint": "pnpx @biomejs/biome lint --write",
-    "check": "pnpx @biomejs/biome check --write"
+    "format": "biome format --write",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --write",
+    "type-check": "pnpx @biomejs/biome check --write",
+    "clean": "rm -rf node_modules .output .nuxt",
+    "clean:install": "pnpm clean && pnpm install"
   },
   "dependencies": {
-    "@nuxt/fonts": "^0.12.1",
-    "@nuxt/ui": "^4.2.1",
+    "@nuxt/fonts": "0.12.1",
+    "@nuxt/ui": "4.2.1",
     "@nuxtjs/i18n": "10.2.1",
-    "@vueuse/nuxt": "^14.1.0",
-    "nuxt": "^4.2.1",
-    "vue": "^3.5.25",
-    "vue-router": "^4.6.3"
+    "@vueuse/nuxt": "14.1.0",
+    "nuxt": "4.2.1",
+    "vue": "3.5.25",
+    "vue-router": "^4.6.3" 
   },
   "devDependencies": {
     "@biomejs/biome": "2.4.13",
-    "@iconify-json/lucide": "^1.2.79",
-    "@types/node": "^24.10.1",
-    "sass-embedded": "^1.93.3",
-    "typescript": "^5.9.3",
-    "vue-tsc": "^3.1.6"
+    "@iconify-json/lucide": "1.2.79",
+    "@types/node": "24.10.1",
+    "sass-embedded": "1.93.3",
+    "typescript": "5.9.3",
+    "vue-tsc": "3.1.6"
   },
-  "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8"
+  "packageManager": "pnpm@10.33.2"
 }

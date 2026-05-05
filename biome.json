@@ -17,7 +17,21 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "correctness": {
+        "noUnusedVariables": {
+          "level": "error",
+          "options": {
+            "ignoreRestSiblings": true
+          }
+        },
+        "noUnusedFunctionParameters": {
+          "level": "error"
+        }
+      },
+      "suspicious": {
+        "noShadowRestrictedNames": "off"
+      }
     }
   },
   "javascript": {
@@ -25,6 +39,17 @@
       "quoteStyle": "single",
       "trailingCommas": "all",
       "semicolons": "asNeeded"
+    }
+  },
+  "html": {
+    "formatter": {
+      "indentScriptAndStyle": true
+    },
+    "experimentalFullSupportEnabled": true
+  },
+  "css": {
+    "formatter": {
+      "quoteStyle": "single"
     }
   },
   "assist": {
