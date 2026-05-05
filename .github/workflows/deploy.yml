@@ -12,18 +12,24 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [24]
     steps:
       - uses: actions/checkout@v4
-      - run: corepack enable
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "24"
-          cache: "pnpm"
-
       - name: Install pnpm
-        run: corepack prepare pnpm@latest --activate
-
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "pnpm"
+      
+      - name: Install dependencies
       - run: pnpm install --frozen-lockfile
+
       - name: Cache Nuxt build
         uses: actions/cache@v4
         with:
