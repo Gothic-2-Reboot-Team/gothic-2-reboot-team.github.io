@@ -3,4 +3,4 @@ export default {
     home: 'Hauptseite',
     about: 'Über uns',
   },
-}
+};

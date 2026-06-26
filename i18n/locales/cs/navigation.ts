@@ -3,4 +3,4 @@ export default {
     home: 'Domů',
     about: 'O nás',
   },
-}
+};

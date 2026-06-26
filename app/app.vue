@@ -53,11 +53,11 @@
 </template>
 
 <script setup lang="ts">
-import type { NavigationMenuItem } from '@nuxt/ui'
+import type { NavigationMenuItem } from '@nuxt/ui';
 
-const route = useRoute()
-const { t } = useI18n()
-const localePath = useLocalePath()
+const route = useRoute();
+const { t } = useI18n();
+const localePath = useLocalePath();
 
 const items = computed<NavigationMenuItem[]>(() => [
   {
@@ -75,15 +75,15 @@ const items = computed<NavigationMenuItem[]>(() => [
     to: localePath('/faq'),
     active: route.path === localePath('/faq'),
   },
-])
+]);
 
 useHead({
   titleTemplate: (titleChunk) => {
-    if (!titleChunk) return 'GOTHIC 2 Reboot'
-    return `${titleChunk} - GOTHIC 2 Reboot`
+    if (!titleChunk) return 'GOTHIC 2 Reboot';
+    return `${titleChunk} - GOTHIC 2 Reboot`;
   },
   title: `GOTHIC 2 Reboot`,
-})
+});
 </script>
 
 <style lang="css">

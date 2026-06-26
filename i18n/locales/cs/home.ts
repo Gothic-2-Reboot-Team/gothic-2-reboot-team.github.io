@@ -3,4 +3,4 @@ export default {
     header: 'Zvládl jsi to!',
     description: 'Našel jsi nás a náš projekt!',
   },
-}
+};
