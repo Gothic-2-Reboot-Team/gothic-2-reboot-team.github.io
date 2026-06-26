@@ -4,4 +4,4 @@ export default defineAppConfig({
       primary: 'white',
     },
   },
-})
+});

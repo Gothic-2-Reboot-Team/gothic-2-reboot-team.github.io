@@ -1,10 +1,10 @@
-import { loadLocales } from './i18n/utils/loadLocales'
+import { loadLocales } from './i18n/utils/loadLocales';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   css: ['~/assets/css/main.css'],
-  modules: ['@nuxtjs/i18n', '@nuxt/ui'],
+  modules: ['@nuxt/eslint', '@nuxtjs/i18n', '@nuxt/ui'],
   devtools: { enabled: true },
   i18n: {
     locales: loadLocales(),
@@ -18,4 +18,4 @@ export default defineNuxtConfig({
       sourcemap: false,
     },
   },
-})
+});
